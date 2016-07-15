@@ -1,34 +1,68 @@
-\documentclass[11pt]{article}
+\documentclass[times,preprint]{aastex}
 \usepackage{graphicx}
 \usepackage[top=1.0in,margin=1.0in]{geometry}
+\usepackage{natbib}
 
-\title{\textbf{LSST Cadence Optimization for AGN Variability Science}}
-\author{Jackeline Moreno}
-\date{July 2016}
+\bibliographystyle{unsrtnat}
 
- \begin{document}
- \maketitle
-    
+\begin{document}
 
+\title{LSST Cadence Optimization for Disc-Intrinsic AGN Variability Science}
+
+\author{Jackeline Moreno\altaffilmark{1}}
+\altaffiltext{1}{Drexel University \\
+Department of Physics \\
+3141 Chestnut Street \\
+Philadelphia, PA 19104, USA}
+\email{jmoreno3663@gmail.com}
+
+\and
+
+\author {Vishal Kasliwal\altaffilmark{2,3}}
+\altaffiltext{2}{University of Pennsylvania \\
+Department of Physics \& Astronomy \\
+209 S. 33$^{\mathrm{rd}}$ St. \\
+Philadelphia, PA 19103, USA}
+\altaffiltext{3}{Princeton University \\
+Department of Astrophysical Sciences \\
+4 Ivy Ln \\
+Princeton, NJ 08544, USA}
+\email{vishal.kasliwal@gmail.com}
+
+\begin{abstract}
+We propose a metric for the Metric Analysis Framework (MAF) that will help determine the utility of various OpSims for studying AGN accretion disc variability.
+\end{abstract}
+
+\section{Introduction}
+Active Galactic Nuclei exhibit rapid stochastic (i.e., bereft of periodicity) flux variations at the $\sim 10$ - $20$ \% level on timescales ranging from hours to years across the electromagnetic spectrum \citep{UrryARAA, Peterson}. Variability may be observed in both the broad-line region (BLR) as well as in the continuum \citep{Peterson99}. Continuum variability is thought to arise in the accretion disk of the AGN; however the exact origin of accretion disk variability is unknown \citep{Accretion14b}. Probing the origins of accretion disk variability by matching phenomenological statistical models for the variability with physical models of accretion physics may prove to be of critical value in developing a deeper understanding of the nature of accretion.
+
+The most popular statistical process used to describe AGN variability is the Continuous-time AutoRegressive Moving Average (C-ARMA) process \citep{Kelly14, Brockwell14} of which the damped random walk (DRW) process \citep{Kelly09} is the simplest kind. \citet{KasliwalCARMA} argue in favor of a physical interpretation of C-ARMA processes that may reveal how flux perturbations in the accretion disk of an AGN evolve. \citet{KasliwalCARMA} show that flux perturbations in the \textit{Kepler} light curve of the Seyfert 1 AGN Zw 229-15 rapidly intensify over a period of $\sim 5.5$~d before exponentially decaying to the mean level with a decay timescale of $\sim 70$~d. The shape of the light curve of individual fluctuations is consistent with that expected from a $2^{\mathrm{nd}}$-order differential equation suggesting that some combination of turbulent dissipation, thermal diffusion and viscous diffusion may be at work in the AGN accretion disk. The application of such analysis methods to the large samples of AGN light curves expected from LSST may tremendously enhance our knowledge of AGN by providing us with population statistics for the quantities estimated in \citet{KasliwalCARMA}.
+
+Application of C-ARMA processes to AGN light curves requires \textit{well-sampled} light curves. \citet{KasliwalCARMA} demonstrate how two C-ARMA processes---a simple DRW and the $2^{\mathrm{nd}}$-order damped harmonic oscillator (DHO) can have similar looking power spectral density (PSD) on the long timescales typically probed by ground-based surveys such as the SDSS Stripe 82 \citep{S82}. On short timescales, the DRW contains excess power as compared to the DHO; a well-sampled light curve drawn from a DHO will look \textit{smoother} than a light curve drawn from a DRW on short timescales even if they look indistinguishable on longer timescales. While this argument makes it clear that it is necessary to sample both short- and long-timescales with LSST, it does not provide us with a sampling strategy. \textit{How should we allocate (in timesteps) the precious exposures available in each LSST filter band in order to unambiguously capture the nature of AGN variability?} It seems that uniform sampling is not desirable given a fixed exposure budget because it limits the shortest cadence interval severely and gives us no high frequency information. Non-uniform sampling promises to deliver information about variability on a multitude of time scales however it is not clear what the optimal pattern is. We outline a method for evaluating the optimality of each LSST cadence pattern produced by an OpSim for studying AGN accretion disc variability science.
 
 \section{AGN Lightcurve Simulation and MAF Metric}
 
-The project described here will evaluate how accurately proposed LSST OpSims will perform for AGN optical variability science goals.  Significant continuum variability (over 5-10 \% level) is observed for these sources on timescales from less than a day to several years.  We propose to implement the cadence analysis discussed below into the Metric Analysis Framework.     
+The project described here will evaluate how accurately proposed LSST OpSims will perform for AGN optical variability science goals. We propose to implement the cadence analysis discussed below into the Metric Analysis Framework (MAF) in order to automate the merit of each OpSim cadence pattern for AGN accretion disc science.
 
-Lightcurves will be simulated for AGN across numerous fields in the projected LSST sky footprint including deep drilling fields.  The frequency of visits for all bands in randomly selected fields will be used to generate mock lightcurves for each band by sampling from an original mock realization at a given RA and DEC.  To resemble distant quasars, the complete test ensemble of AGN targets will be simulated as 20th magnitude sources.  The brightness observed in each band will be modelled as differing by either an addition or multiplication of a noise factor.     
+Light curves will be simulated for AGN across numerous fields in the projected LSST sky footprint including deep drilling fields (DDFs) using the Python language \textsc{k\={a}l\={i}} software library of \citet{KasliwalCARMA}. Densely-sampled mock light curves, drawn from a range of C-ARMA models with different model orders and characteristic timescales, will be generated to simulate the underlying true population of AGN. Our prior for generating the dense mocks will be drawn from the results of the \textit{K2} studies of AGN variability currently in progress. The frequency of visits for all bands in randomly selected fields will be used to generate realistic light curves for each LSST band by down-sampling from the dense mocks at various RA and Dec within the LSST footprint.  The complete test ensemble of AGN targets will be simulated at different S/N levels to probe the effectiveness of binning rapidly-obtained observations of faint objects in order to boost the S/N. The \textsc{k\={a}l\={i}} software will then be used to infer what C-ARMA model fits each simulated light curve best.
 
-To concretely evaluate if regular sampling is necessary, or even significantly advantageous over an irregular pattern that captures both high frequency and low frequency variability,  we propose the following metrics to evaluate a particular observation strategy. 
+To concretely evaluate the optimality of a given OpSim for accretion disc variability science, we propose the following metrics: 
 
-1. How accurately do we recover the \textbf{amplitude} of variability after estimating observational uncertainty? 
+\begin{enumerate}
 
-This metric will gauge if we can detect variability in the first place with a given sampling pattern.     
+\item The fraction $f_{Comp.}$ of light curves for which we recover the original `complexity' of the light curve variability.
+The complexity of a light curve is quantified by the number of features in the PSD of the light curve. Insufficient sampling can shift power from higher (poorly-sampled) frequencies to lower frequencies via aliasing. Aliasing can introduce false-periodicities into the PSD \citep{FalsePeriodicities}. In the case of C-ARMA processes, complexity is statistically parametrized by the order ($p$,$q$) of the C-ARMA process that best fits the mock light curve. Regardless of the utility of C-ARMA processes for modeling AGN variability, it is desirable that we accurately capture the behavior of the PSD of the light curve. We will look for any consistent bias that may overestimate or underestimate the complexity for the entire ensemble of mock light curves.
 
+\item The fraction $f_{Amp.}$ of light curves for which we successfully recover the amplitude of variability to with $10$ \% of the simulated value and the median fractional discrepancy $f_{\delta Amp./Amp.}$ of the variability amplitude for the entire population of simulated AGN. The variability amplitude is correlated with the mass and anti-correlated with the intrinsic luminosity and Eddington ratio of of the accreting supermassive black hole \citep{MacLeod10}, making it very desirable to estimate the variability amplitude accurately.
 
-2. Does the OpSim recover the original \textbf{complexity} of the lightcurve variability sufficiently well?
- The "complexity" is statistically parametrized as the order $p$ of the stochastic polynomial that best fits the mock lightcurve. For what fraction of our simulated AGN survey is this metric recovered accurately?
-   
-   Our mock AGN lightcurves are simulated as C-ARMA processes meaning fluctuations in flux values are driven by random Gaussian noise and dissipate on e-folding times of various strengths.  More complex variability structure in a mock lightcurve can be simulated by increasing the order (number of AR terms) of the C-ARMA polynomial.  This may be developed as a binomial metric (is the estimated $p$ order correct or not), but we will look for any consistent bias that may overestimate or underestimate the complexity $p$ for the entire ensemble of mock lightcurves.  
-   
-3. Can we recover \textbf{timescales} accurately? This metric will determine how reliably we can make scientific physical inferences about the nature of the observed variability.  The mock lightcurves are generated by directly defining timescales that set the roots of the stochastic polynomial describing the simulated lightcurve using the software library KALI (Kasliwal et al. 2016 in prep, Github:AstroVPK). 
+\item The fraction $f_{T}$ of light curves for which we recover the dominant variability time scale to within $10$ \% of the simulated value and the median fractional discrepancy $f_{\delta T/T}$ of the dominant timescale for the entire population of simulated AGN. \citet{MacLeod10} have found a correlation between the dominant timescale and blacvk hole mass. \citet{Kelly09} have shown that inferences may be made about the nature of the physical processes operating in AGN accretion disks based on timescales 
+
+\end{enumerate}
+
+\medskip
+
+\bibliography{allrefs}
+
+%\allauthors
 
 \end{document}

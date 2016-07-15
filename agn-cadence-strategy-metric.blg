@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: agn-cadence-strategy-metric.aux
+The style file: unsrtnat.bst
+Database file #1: allrefs.bib
+You've used 11 entries,
+            2481 wiz_defined-function locations,
+            639 strings with 7913 characters,
+and the built_in function-call counts, 5778 in all, are:
+= -- 330
+> -- 630
+< -- 3
++ -- 222
+- -- 200
+* -- 606
+:= -- 1090
+add.period$ -- 44
+call.type$ -- 11
+change.case$ -- 20
+chr.to.int$ -- 11
+cite$ -- 11
+duplicate$ -- 204
+empty$ -- 349
+format.name$ -- 211
+if$ -- 1105
+int.to.chr$ -- 1
+int.to.str$ -- 12
+missing$ -- 11
+newline$ -- 75
+num.names$ -- 34
+pop$ -- 74
+preamble$ -- 2
+purify$ -- 11
+quote$ -- 0
+skip$ -- 102
+stack$ -- 0
+substring$ -- 112
+swap$ -- 29
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 71
+warning$ -- 0
+while$ -- 26
+width$ -- 0
+write$ -- 170

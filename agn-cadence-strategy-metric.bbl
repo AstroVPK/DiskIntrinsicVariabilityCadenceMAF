@@ -1,0 +1,113 @@
+ \newcommand{\noop}[1]{}
+\begin{thebibliography}{11}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Ulrich} et~al.(1997){Ulrich}, {Maraschi}, and {Urry}]{UrryARAA}
+M.-H. {Ulrich}, L.~{Maraschi}, and C.~M. {Urry}.
+\newblock {Variability of Active Galactic Nuclei}.
+\newblock \emph{\araa}, 35:\penalty0 445--502, 1997.
+\newblock \doi{10.1146/annurev.astro.35.1.445}.
+
+\bibitem[{Peterson}(1997)]{Peterson}
+M.~{Peterson}, Bradley.
+\newblock \emph{An Introduction to Active Galactic Nuclei}.
+\newblock Cambridge University Press, 1997.
+\newblock ISBN 0521479118.
+
+\bibitem[{Peterson} et~al.(1999){Peterson}, {Barth}, {Berlind}, {Bertram},
+  {Bischoff}, {Bochkarev}, {Burenkov}, {Cheng}, {Dietrich}, {Filippenko},
+  {Giannuzzo}, {Ho}, {Huchra}, {Hunley}, {Kaspi}, {Kollatschny}, {Leonard},
+  {Malkov}, {Matheson}, {Mignoli}, {Nelson}, {Papaderos}, {Peters}, {Pogge},
+  {Pronik}, {Sergeev}, {Sergeeva}, {Shapovalova}, {Stirpe}, {Tokarz}, {Wagner},
+  {Wanders}, {Wei}, {Wilkes}, {Wu}, {Xue}, and {Zou}]{Peterson99}
+B.~M. {Peterson}, A.~J. {Barth}, P.~{Berlind}, R.~{Bertram}, K.~{Bischoff},
+  N.~G. {Bochkarev}, A.~N. {Burenkov}, F.-Z. {Cheng}, M.~{Dietrich}, A.~V.
+  {Filippenko}, E.~{Giannuzzo}, L.~C. {Ho}, J.~P. {Huchra}, J.~{Hunley},
+  S.~{Kaspi}, W.~{Kollatschny}, D.~C. {Leonard}, Y.~F. {Malkov}, T.~{Matheson},
+  M.~{Mignoli}, B.~{Nelson}, P.~{Papaderos}, J.~{Peters}, R.~W. {Pogge}, V.~I.
+  {Pronik}, S.~G. {Sergeev}, E.~A. {Sergeeva}, A.~I. {Shapovalova}, G.~M.
+  {Stirpe}, S.~{Tokarz}, R.~M. {Wagner}, I.~{Wanders}, J.-Y. {Wei}, B.~J.
+  {Wilkes}, H.~{Wu}, S.-J. {Xue}, and Z.-L. {Zou}.
+\newblock {Steps toward Determination of the Size and Structure of the
+  Broad-Line Region in Active Galactic Nuclei. XV. Long-Term Optical Monitoring
+  of NGC 5548}.
+\newblock \emph{\apj}, 510:\penalty0 659--668, January 1999.
+\newblock \doi{10.1086/306604}.
+
+\bibitem[{Maurizio} et~al.(2015){Maurizio}, {Belloni}, {Casella}, {Gilfanov},
+  {Jonker}, and {King}]{Accretion14b}
+Falanga {Maurizio}, Tomaso {Belloni}, Piergiorgio {Casella}, M.~{Gilfanov},
+  Peter {Jonker}, and Andrew {King}, editors.
+\newblock \emph{The Physics of Accretion onto Black Holes}, volume~49 of
+  \emph{Space Sciences Series of ISSI}.
+\newblock Springer, 2015.
+\newblock ISBN 1493922262.
+
+\bibitem[{Kelly} et~al.(2014){Kelly}, {Becker}, {Sobolewska}, {Siemiginowska},
+  and {Uttley}]{Kelly14}
+B.~C. {Kelly}, A.~C. {Becker}, M.~{Sobolewska}, A.~{Siemiginowska}, and
+  P.~{Uttley}.
+\newblock {Flexible and Scalable Methods for Quantifying Stochastic Variability
+  in the Era of Massive Time-domain Astronomical Data Sets}.
+\newblock \emph{\apj}, 788:\penalty0 33, June 2014.
+\newblock \doi{10.1088/0004-637X/788/1/33}.
+
+\bibitem[{Brockwell}(2014)]{Brockwell14}
+P.J. {Brockwell}.
+\newblock Recent results in the theory and applications of carma processes.
+\newblock \emph{Ann. Inst. Stat. Math.}, 66\penalty0 (4):\penalty0 647--685,
+  2014.
+\newblock ISSN 0020-3157.
+\newblock \doi{10.1007/s10463-014-0468-7}.
+\newblock URL \url{http://dx.doi.org/10.1007/s10463-014-0468-7}.
+
+\bibitem[{Kelly} et~al.(2009){Kelly}, {Bechtold}, and {Siemiginowska}]{Kelly09}
+B.~C. {Kelly}, J.~{Bechtold}, and A.~{Siemiginowska}.
+\newblock {Are the Variations in Quasar Optical Flux Driven by Thermal
+  Fluctuations?}
+\newblock \emph{\apj}, 698:\penalty0 895, June 2009.
+\newblock \doi{10.1088/0004-637X/698/1/895}.
+
+\bibitem[{Kasliwal} et~al.(2016){Kasliwal}, {Vogeley}, and
+  {Richards}]{KasliwalCARMA}
+V.~P. {Kasliwal}, M.~S. {Vogeley}, and G.~T. {Richards}.
+\newblock {Extracting Information from AGN Variability}.
+\newblock Submitted to \mnras, 2016.
+
+\bibitem[{Annis} et~al.(2014){Annis}, {Soares-Santos}, {Strauss}, {Becker},
+  {Dodelson}, {Fan}, {Gunn}, {Hao}, {Ivezi{\'c}}, {Jester}, {Jiang},
+  {Johnston}, {Kubo}, {Lampeitl}, {Lin}, {Lupton}, {Miknaitis}, {Seo}, {Simet},
+  and {Yanny}]{S82}
+J.~{Annis}, M.~{Soares-Santos}, M.~A. {Strauss}, A.~C. {Becker}, S.~{Dodelson},
+  X.~{Fan}, J.~E. {Gunn}, J.~{Hao}, {\v Z}.~{Ivezi{\'c}}, S.~{Jester},
+  L.~{Jiang}, D.~E. {Johnston}, J.~M. {Kubo}, H.~{Lampeitl}, H.~{Lin}, R.~H.
+  {Lupton}, G.~{Miknaitis}, H.-J. {Seo}, M.~{Simet}, and B.~{Yanny}.
+\newblock {The Sloan Digital Sky Survey Coadd: 275 deg$^{2}$ of Deep Sloan
+  Digital Sky Survey Imaging on Stripe 82}.
+\newblock \emph{\apj}, 794:\penalty0 120, October 2014.
+\newblock \doi{10.1088/0004-637X/794/2/120}.
+
+\bibitem[{Vaughan} et~al.(2016){Vaughan}, {Uttley}, {Markowitz},
+  {Huppenkothen}, {Middleton}, {Alston}, {Scargle}, and
+  {Farr}]{FalsePeriodicities}
+S.~{Vaughan}, P.~{Uttley}, A.~G. {Markowitz}, D.~{Huppenkothen}, M.~J.
+  {Middleton}, W.~N. {Alston}, J.~D. {Scargle}, and W.~M. {Farr}.
+\newblock {False periodicities in quasar time-domain surveys}.
+\newblock \emph{ArXiv e-prints}, June 2016.
+
+\bibitem[{MacLeod} et~al.(2010){MacLeod}, {Ivezi{\'c}}, {Kochanek},
+  {Koz{\l}owski}, {Kelly}, {Bullock}, {Kimball}, {Sesar}, {Westman}, {Brooks},
+  {Gibson}, {Becker}, and {de Vries}]{MacLeod10}
+C.~L. {MacLeod}, {\v Z}.~{Ivezi{\'c}}, C.~S. {Kochanek}, S.~{Koz{\l}owski},
+  B.~{Kelly}, E.~{Bullock}, A.~{Kimball}, B.~{Sesar}, D.~{Westman},
+  K.~{Brooks}, R.~{Gibson}, A.~C. {Becker}, and W.~H. {de Vries}.
+\newblock {Modeling the Time Variability of SDSS Stripe 82 Quasars as a Damped
+  Random Walk}.
+\newblock \emph{\apj}, 721:\penalty0 1014--1033, oct 2010.
+\newblock \doi{10.1088/0004-637X/721/2/1014}.
+
+\end{thebibliography}
