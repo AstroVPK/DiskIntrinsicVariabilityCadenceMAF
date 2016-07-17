@@ -1,10 +1,27 @@
  \newcommand{\noop}[1]{}
-\begin{thebibliography}{11}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Graham} et~al.(2015){Graham}, {Djorgovski}, {Stern}, {Drake},
+  {Mahabal}, {Donalek}, {Glikman}, {Larson}, and {Christensen}]{Graham15}
+M.~J. {Graham}, S.~G. {Djorgovski}, D.~{Stern}, A.~J. {Drake}, A.~A. {Mahabal},
+  C.~{Donalek}, E.~{Glikman}, S.~{Larson}, and E.~{Christensen}.
+\newblock {A systematic search for close supermassive black hole binaries in
+  the Catalina Real-time Transient Survey}.
+\newblock \emph{\mnras}, 453:\penalty0 1562--1576, October 2015.
+\newblock \doi{10.1093/mnras/stv1726}.
+
+\bibitem[{Vaughan} et~al.(2016){Vaughan}, {Uttley}, {Markowitz},
+  {Huppenkothen}, {Middleton}, {Alston}, {Scargle}, and
+  {Farr}]{FalsePeriodicities}
+S.~{Vaughan}, P.~{Uttley}, A.~G. {Markowitz}, D.~{Huppenkothen}, M.~J.
+  {Middleton}, W.~N. {Alston}, J.~D. {Scargle}, and W.~M. {Farr}.
+\newblock {False periodicities in quasar time-domain surveys}.
+\newblock \emph{ArXiv e-prints}, June 2016.
 
 \bibitem[{Ulrich} et~al.(1997){Ulrich}, {Maraschi}, and {Urry}]{UrryARAA}
 M.-H. {Ulrich}, L.~{Maraschi}, and C.~M. {Urry}.
@@ -17,6 +34,12 @@ M.~{Peterson}, Bradley.
 \newblock \emph{An Introduction to Active Galactic Nuclei}.
 \newblock Cambridge University Press, 1997.
 \newblock ISBN 0521479118.
+
+\bibitem[{Boller} et~al.(1996){Boller}, {Brandt}, and
+  {Fink}]{NLSy1XRayVariability}
+T.~{Boller}, W.~N. {Brandt}, and H.~{Fink}.
+\newblock {Soft X-ray properties of narrow-line Seyfert 1 galaxies.}
+\newblock \emph{\aap}, 305:\penalty0 53, January 1996.
 
 \bibitem[{Peterson} et~al.(1999){Peterson}, {Barth}, {Berlind}, {Bertram},
   {Bischoff}, {Bochkarev}, {Burenkov}, {Cheng}, {Dietrich}, {Filippenko},
@@ -90,14 +113,6 @@ J.~{Annis}, M.~{Soares-Santos}, M.~A. {Strauss}, A.~C. {Becker}, S.~{Dodelson},
   Digital Sky Survey Imaging on Stripe 82}.
 \newblock \emph{\apj}, 794:\penalty0 120, October 2014.
 \newblock \doi{10.1088/0004-637X/794/2/120}.
-
-\bibitem[{Vaughan} et~al.(2016){Vaughan}, {Uttley}, {Markowitz},
-  {Huppenkothen}, {Middleton}, {Alston}, {Scargle}, and
-  {Farr}]{FalsePeriodicities}
-S.~{Vaughan}, P.~{Uttley}, A.~G. {Markowitz}, D.~{Huppenkothen}, M.~J.
-  {Middleton}, W.~N. {Alston}, J.~D. {Scargle}, and W.~M. {Farr}.
-\newblock {False periodicities in quasar time-domain surveys}.
-\newblock \emph{ArXiv e-prints}, June 2016.
 
 \bibitem[{MacLeod} et~al.(2010){MacLeod}, {Ivezi{\'c}}, {Kochanek},
   {Koz{\l}owski}, {Kelly}, {Bullock}, {Kimball}, {Sesar}, {Westman}, {Brooks},

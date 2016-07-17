@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: agn-cadence-strategy-metric.aux
 The style file: unsrtnat.bst
 Database file #1: allrefs.bib
-You've used 11 entries,
+You've used 13 entries,
             2481 wiz_defined-function locations,
-            639 strings with 7913 characters,
-and the built_in function-call counts, 5778 in all, are:
-= -- 330
-> -- 630
+            655 strings with 8403 characters,
+and the built_in function-call counts, 6716 in all, are:
+= -- 395
+> -- 708
 < -- 3
-+ -- 222
-- -- 200
-* -- 606
-:= -- 1090
-add.period$ -- 44
-call.type$ -- 11
-change.case$ -- 20
-chr.to.int$ -- 11
-cite$ -- 11
-duplicate$ -- 204
-empty$ -- 349
-format.name$ -- 211
-if$ -- 1105
++ -- 250
+- -- 224
+* -- 699
+:= -- 1254
+add.period$ -- 51
+call.type$ -- 13
+change.case$ -- 24
+chr.to.int$ -- 13
+cite$ -- 13
+duplicate$ -- 242
+empty$ -- 420
+format.name$ -- 237
+if$ -- 1294
 int.to.chr$ -- 1
-int.to.str$ -- 12
-missing$ -- 11
-newline$ -- 75
-num.names$ -- 34
-pop$ -- 74
+int.to.str$ -- 14
+missing$ -- 13
+newline$ -- 86
+num.names$ -- 40
+pop$ -- 87
 preamble$ -- 2
-purify$ -- 11
+purify$ -- 13
 quote$ -- 0
-skip$ -- 102
+skip$ -- 120
 stack$ -- 0
-substring$ -- 112
-swap$ -- 29
+substring$ -- 149
+swap$ -- 35
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 71
+type$ -- 85
 warning$ -- 0
-while$ -- 26
+while$ -- 32
 width$ -- 0
-write$ -- 170
+write$ -- 198
